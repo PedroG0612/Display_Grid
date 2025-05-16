@@ -1,107 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
 <header>
     <div class="Título">
-    <h1>Pedro Garcia</h1>
-    <h3>Desenvolvendo e Inovando na Web</h3>
-
+        <h1>Pedro Garcia</h1>
+        <h3>Desenvolvendo e Inovando na Web</h3>
     </div>
 
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+        </ul>
+    </nav>
+</header>
 
-<div class="container"></div>
+<main>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Pedro Garcia e estou começando minha jornada como Desenvolvedor Web. Tenho aprendido a criar sites usando HTML e CSS, e venho praticando cada vez mais para melhorar.</p>
+        <p>Estudo no SENAI, onde estou tendo a oportunidade de aprender sobre desenvolvimento de sites e entender como tudo funciona por trás das páginas que usamos no dia a dia.</p>
+        <p>Gosto muito da ideia de construir páginas que as pessoas possam acessar e usar de forma simples. Ainda estou aprendendo, mas tenho me dedicado bastante e me esforçado para melhorar a cada projeto.</p>
+        <p>Este site é parte do meu aprendizado, e estou animado para continuar estudando e evoluindo. Se quiser acompanhar meu progresso ou deixar alguma dica, será muito bem-vindo!</p>
+    </section>
 
-<nav>
-  <ul>
-    <li><a href="#sobre">Sobre Mim</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contatos">Contatos</a></li>
-  </ul>
-</nav>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Projeto 1</h3>
+                <div class="img-container">
+                    <img src="img/TechBlog.png" alt="TechBlog">
+                </div>
+                <p>Site responsivo relacionado a tecnologia, usando HTML e CSS.</p>
+                <a href="https://pedrog0612.github.io/TechBlog/Problemascomuns.html">Ver Projeto</a>
+            </div>
 
+            <div class="card">
+                <h3>Projeto 2</h3>
+                <div class="img-container">
+                    <img src="img/Viagens-que-marcam.png" alt="Viagens-que-Marcam">
+                </div>
+                <p>Site responsivo relacionado a viagens, com HTML e CSS.</p>
+                <a href="https://pedrog0612.github.io/Viagens-que-Marcam/">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
 
-    </header>
-    
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
 
+        <div class="social-links">
+    <a href="https://www.linkedin.com/in/pedro-garcia-batista-20879934a" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://wa.me/5511932512390" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="mailto:pedrogarbatt@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+</div>
+    </section>
+</main>
 
- <main>
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Pedro Garcia e estou começando minha jornada como Desenvolvedor Web. Tenho aprendido a criar sites usando HTML e CSS, e venho praticando cada vez mais para melhorar.</p>
-            <p>Estudo no SENAI, onde estou tendo a oportunidade de aprender sobre desenvolvimento de sites e entender como tudo funciona por trás das páginas que usamos no dia a dia.</p>
-            <p>Gosto muito da ideia de construir páginas que as pessoas possam acessar e usar de forma simples. Ainda estou aprendendo, mas tenho me dedicado bastante e me esforçado para melhorar a cada projeto.</p>
-            <p>Este site é parte do meu aprendizado, e estou animado para continuar estudando e evoluindo. Se quiser acompanhar meu progresso ou deixar alguma dica, será muito bem-vindo!</p>
-        </section>
-
-
-        <section id="projetos">
-  <h2>Projetos</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Projeto 1</h3>
-      <img src="img\TechBlog.png" alt="TechBlog">
-      <p>Site responsivo relacionado a tecnologia, usando HTML e CSS.</p>
-      <a href="https://pedrog0612.github.io/TechBlog/Problemascomuns.html">Ver Projeto</a>
-    </div>
-
-    <div class="card">
-      <h3>Projeto 2</h3>
-      <img src="" alt="">
-      <p>Site responsivo relacionado a viagens, com html e css</p>
-      <a href="https://pedrog0612.github.io/Viagens-que-Marcam/">Ver Projeto</a>
-    </div>
-  </div>
-</section>
-
-<div>
-
-        <section id="contatos">
-
-            <h2>Contatos</h2>
-
-
-<form>
-    <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome">
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div>
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem"></textarea>
-    </div>
-    <button type="submit">Enviar</button>
-</form>
-
-<h4>
-    LinkedIn
-    <img src="img\image.png" alt="LinkedIn">
-
-</h4>
-
-
-
-
-        </section>
-    </main>
-    <footer>
+<footer>
+    <div class="footer-content">
         <p>&copy; 2025 - Pedro Garcia</p>
-    </footer>
-
-
-
-
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/pedro-garcia-batista-20879934a" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Meu LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5511932512390" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Meu WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:pedrogarbatt@gmail.com" 
+               aria-label="Meu Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
